@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- ELVAN NICOLA // 2602113256 -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=768px, initial-scale=1.0">
+    <link rel="stylesheet" href="mainstyle.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Orbitron&display=swap" rel="stylesheet">   
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HI-Toyz | REGISTER</title>
+</head>
+<body>
+    <div class="fullbody">
+        <div class="navbar">
+            <div class="logo trans"><a href="main.html">HI-TOYZ</a></div>
+            <ul class="links trans">
+                <li><a href="main.html">HOME</a></li>
+                <li><a href="products.html">OUR PRODUCTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="event.html">EVENT</a></li>
+            </ul>
+            <a href="register.html" class="register">REGISTER</a>
+            <div class="bar_button">
+                <i class="fa-sharp fa-solid fa-bars" onclick="collapse()"></i>
+            </div>
+        </div>
+        <div class="side-bar">
+            <li class="trans"><a href="main.html">HOME</a></li>
+            <li class="trans"><a href="products.html">OUR PRODUCTS</a></li>
+            <li class="trans"><a href="gallery.html">GALLERY</a></li>
+            <li class="trans"><a href="event.html">EVENT</a></li>
+            <li><a href="register.html" class="register">REGISTER</a></li>
+        </div>
+        <br>
+    </div>
+    <div class="regist-body">
+        <div class="container-regist">
+            <h1 class="form-title">Registration</h1>
+            <form onsubmit="return validation()">
+                <div class="user-info">
+                    <div class="user-input">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" required>
+                        <p id="errormsg"></p>
+                    </div>
+                    <div class="user-input">
+                        <label for="birthDate">Birth Date</label>
+                        <input type="date" id="birthDate" name="birthDate" placeholder="Enter Birth Date" required>
+                    </div>
+                    <div class="user-input">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" placeholder="Enter E-Mail">
+                        <p id="errormsg"></p>
+                    </div>
+                    <div class="user-input">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter Password">
+                        <p id="errormsg"></p>
+
+                    </div>
+                </div>
+                
+                <div class="checkbox-detail">
+                    <span class="checkbox-title">Terms & Conditions</span>
+                    <div class="agreement-checkbox">
+                        <label for="checkbox">I Agree to these <a href="#">Terms</a></label>
+                        <input type="checkbox" name="checkbox" id="checkbox" required>
+                    </div>
+                </div>
+                <div class="form-submit-btn">
+                    <input type="submit" onclick="validation()" value="Register">
+                    <!-- WHY WONT YOU WORK PLEASE FOR GODS SAKE AAAAAAAAAAAAAAAAAAAAAAAA -->
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="sosmed">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-line"></i></a>
+            
+        </div>
+        <ul class="foot-list">
+            <li>
+                <a href="main.html">HOME</a>
+            </li>
+            <li>
+                <a href="products.html">OUR PRODUCTS</a>
+            </li>
+            <li>
+                <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+                <a href="event.html">EVENT</a>
+            </li>
+        </ul>
+        <p class="copy-tag">
+            HI-TOYZ @ 2023
+        </p>
+    </footer>
+    
+    <script defer  src="script.js"></script>
+</body>
+</html>
